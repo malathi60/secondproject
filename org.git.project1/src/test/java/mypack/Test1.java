@@ -8,7 +8,7 @@ public class Test1
 	public void method1()
 	{
 		String x="hello";
-		String y="how are you ?";
+		String y="how are you doing?";
 		String w=x+y;
 		System.out.println("String after concatination:"  + w);
 	}
