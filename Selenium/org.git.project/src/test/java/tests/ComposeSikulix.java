@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -35,6 +36,10 @@ public void composeMail() throws Exception
 	lp.attachfileSikulix();
 	Thread.sleep(5000);
 	//lp.clicksend();
-
+}
+@AfterClass
+public void closeSite()
+{
+	wu.closeSite(driver);
 }
 }
