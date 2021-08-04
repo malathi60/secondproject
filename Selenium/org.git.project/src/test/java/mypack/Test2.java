@@ -13,6 +13,7 @@ public class Test2 {
 			FirefoxDriver driver=new FirefoxDriver();
 			driver.get("https://www.google.com");
 		System.out.println(driver.getCurrentUrl());
+		
 			
 
 	}
