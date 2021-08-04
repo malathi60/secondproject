@@ -1,0 +1,82 @@
+[debug (8/4/21 2:30:41 PM)] Debug: setLogFile: E:\Selenium\org.git.project\src\test\resources\extrajars\SikuliX-1.1.3-SetupLog.txt
+[debug (8/4/21 2:30:41 PM)] RunSetup: ... starting with no args given
+[debug (8/4/21 2:30:41 PM)] RunSetup: Setup: 1.1.3 2018-07-11_08:19 in folder:
+E:\Selenium\org.git.project\src\test\resources\extrajars
+[debug (8/4/21 2:30:42 PM)] RunSetup: RunningSystem: Windows 10.0
+[debug (8/4/21 2:30:42 PM)] RunSetup: parent of jar/classes: E:\Selenium\org.git.project\src\test\resources\extrajars
+[debug (8/4/21 2:30:42 PM)] RunSetup: RunningJava: Java 8 (amd64) 1.8.0_281-b09
+[debug (8/4/21 2:30:42 PM)] init user preferences
+[debug (8/4/21 2:30:54 PM)] RunSetup: 
+popAsk: --------------------
+The following file(s) will be downloaded to
+E:\Selenium\org.git.project\src\test\resources\extrajars
+--- Native support libraries for Windows (sikulixlibs...)
+--- Package 2 ---
+sikulixsetupAPI-1.1.3-20180711.082046-40-forsetup.jar (Java API)
+Only click NO, if you want to terminate setup now!
+Click YES even if you want to use local copies in Downloads!
+--------------------
+[debug (8/4/21 2:30:55 PM)] RunSetup: 
+popAsk: --------------------
+You have for Windows native libs
+C:\Users\Dell\AppData\Roaming\Sikulix\SikulixDownloads\sikulixlibswin-1.1.1.jar
+Click YES, if you want to use this for setup processing
+... or click NO, to ignore it and download a fresh copy
+--------------------
+[debug (8/4/21 2:30:57 PM)] RunSetup: Copied from Downloads: sikulixlibswin
+[debug (8/4/21 2:30:57 PM)] FileManager: resetFolder:
+E:\Selenium\org.git.project\src\test\resources\extrajars\SetupStuff\sikulixlibs\windows
+jar:file:/E:/Selenium/org.git.project/src/test/resources/extrajars/sikulixlibswin.jar
+[debug (8/4/21 2:30:57 PM)] RunSetup: 
+popAsk: --------------------
+You have for Java API package
+C:\Users\Dell\AppData\Roaming\Sikulix\SikulixDownloads_201807110819\sikulixsetupAPI-1.1.3-20180711.082046-40-forsetup.jar
+Click YES, if you want to use this for setup processing
+... or click NO, to ignore it and download a fresh copy
+--------------------
+[debug (8/4/21 2:30:59 PM)] RunSetup: Copied from Downloads: sikulixapi
+[debug (8/4/21 2:30:59 PM)] RunSetup: Download ended
+[debug (8/4/21 2:30:59 PM)] RunSetup: Downloads for selected options:
+sikulixlibswin-1.1.1.jar sikulixsetupAPI-1.1.3-20180711.082046-40-forsetup.jar 
+[debug (8/4/21 2:30:59 PM)] RunSetup: adding needed stuff to sikulixapi.jar
+[debug (8/4/21 2:30:59 PM)] FileManager: buildJar: sikulixtemp.jar
+[debug (8/4/21 2:30:59 PM)] FileManager: buildJar: adding: sikulixapi.jar
+[debug (8/4/21 2:31:05 PM)] FileManager: buildJar: adding: sikulixlibswin.jar
+[debug (8/4/21 2:31:08 PM)] FileManager: buildJar: adding sikulixcontent at sikulixlibswin
+[debug (8/4/21 2:31:08 PM)] FileManager: buildJar: completed
+[debug (8/4/21 2:31:08 PM)] RunSetup: renaming sikulixtemp.jar to target jar: sikulixapi.jar
+[debug (8/4/21 2:31:09 PM)] RunSetup: Trying to run functional test: JAVA-API 
+[debug (8/4/21 2:31:14 PM)] RunTimeSETUP: addToClasspath:
+file:/E:/Selenium/org.git.project/src/test/resources/extrajars/sikulixapi.jar
+[debug (8/4/21 2:31:14 PM)] RunSetup: trying to run org.sikuli.script.Sikulix.testSetup()
+[debug (8/4/21 2:31:14 PM)] RunSetup: class found: class org.sikuli.script.Sikulix
+[debug (8/4/21 2:31:14 PM)] RunSetup: getMethod: public static boolean org.sikuli.script.Sikulix.testSetup()
+[debug (8/4/21 2:31:14 PM)] RunSetup: invoke: public static boolean org.sikuli.script.Sikulix.testSetup()
+[debug (8/4/21 2:31:14 PM)] RunTimeSETUP: exists libs folder at: C:\Users\Dell\AppData\Roaming\Sikulix\SikulixLibs_201807110819
+[debug (8/4/21 2:31:15 PM)] RunTimeSETUP: addToWindowsSystemPath: added to systempath:
+C:\Users\Dell\AppData\Roaming\Sikulix\SikulixLibs_201807110819
+[debug (8/4/21 2:31:15 PM)] RunTimeSETUP: checkJavaUsrPath: added to ClassLoader.usrPaths
+[debug (8/4/21 2:31:17 PM)] RunTimeSETUP: loadLib: VisionProxy.dll
+[debug (8/4/21 2:31:17 PM)] Mouse: init start
+[debug (8/4/21 2:31:17 PM)] Mouse: init end
+[debug (8/4/21 2:31:17 PM)] Image: BufferedImage: (100, 100)
+[debug (8/4/21 2:31:17 PM)] Finder: Image: __BufferedImage__: (100x100)
+[debug (8/4/21 2:31:17 PM)] Sikulix: testSetup: Finder setup with image worked
+[debug (8/4/21 2:31:17 PM)] FileManager: tempfile create:
+C:\Users\Dell\AppData\Local\Temp\Sikulix_1607213324\sikuli-1770594410495124688.png
+[debug (8/4/21 2:31:17 PM)] Image: loaded: C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png (file:/C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png)
+[debug (8/4/21 2:31:17 PM)] Image: cached: C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png (29 KB) (# 1 KB 29 -- 0 % of 64 MB)
+[debug (8/4/21 2:31:17 PM)] Sikulix: testSetup: Finder setup with image file worked
+[debug (8/4/21 2:31:17 PM)] Image: reused: C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png (file:/C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png)
+[debug (8/4/21 2:31:17 PM)] Region: wait: waiting 3.0 secs for C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png to appear in S(0)[0,0 1920x1080]
+[debug (8/4/21 2:31:18 PM)] Region: wait: C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png appeared (M[0,0 100x100]@S(S(0)[0,0 1920x1080]) S:1.00 C:50,50 [596 msec])
+[debug (8/4/21 2:31:18 PM)] Sikulix: testSetup: Screen.find(imagefile) worked
+[debug (8/4/21 2:31:18 PM)] Image: reused: C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png (file:/C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png)
+[debug (8/4/21 2:31:18 PM)] Region: wait: waiting 3.0 secs for C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png to appear in S(0)[0,0 1920x1080]
+[debug (8/4/21 2:31:18 PM)] Region: wait: C:/Users/Dell/AppData/Local/Temp/Sikulix_1607213324/sikuli-1770594410495124688.png appeared (M[0,0 100x100]@S(S(0)[0,0 1920x1080]) S:1.00 C:50,50 [299 msec])
+[debug (8/4/21 2:31:18 PM)] Sikulix: testSetup: repeated Screen.find(imagefile) worked
+[debug (8/4/21 2:31:54 PM)] Sikulix: testSetup: Finder.find: worked
+[debug (8/4/21 2:31:59 PM)] RunSetup: ... SikuliX Setup seems to have ended successfully ;-)
+[debug (8/4/21 2:31:59 PM)] RunTimeSETUP: final cleanup
+[debug (8/4/21 2:32:00 PM)] FileManager: deleteFileOrFolder:
+C:\Users\Dell\AppData\Local\Temp\Sikulix_1607213324
