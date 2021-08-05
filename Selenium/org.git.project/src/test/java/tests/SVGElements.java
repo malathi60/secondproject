@@ -27,8 +27,8 @@ public class SVGElements {
 		String items=sc.nextLine();
 		driver.get("https://emicalculator.net/");
 		FluentWait<ChromeDriver> wait=new FluentWait<ChromeDriver>(driver);
-		wait.withTimeout(Duration.ofSeconds(80));
-		wait.pollingEvery(Duration.ofMillis(500));
+		wait.withTimeout(Duration.ofSeconds(30));
+		wait.pollingEvery(Duration.ofMillis(200));
 		WebElement e=wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("(//*[name()='svg'])[2]")));
 		driver.executeScript("arguments[0].scrollIntoView();", e);
