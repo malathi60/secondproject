@@ -23,7 +23,7 @@ public class ComposeMailViaAutoIt
 	@Test
 	public void composeMail() throws Exception
 	{
-		wu.launchSite(driver);
+		wu.launchSite(driver,"url");
 		lp=new LoginPage(driver,wait);
 		lp.filluid("malathivan");
 		lp.clickNext();

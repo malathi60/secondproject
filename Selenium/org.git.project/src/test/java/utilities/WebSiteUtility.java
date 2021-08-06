@@ -65,9 +65,9 @@ public class WebSiteUtility {
 		return(wait);
 		
 	}
-	public void launchSite(RemoteWebDriver driver) throws Exception
+	public void launchSite(RemoteWebDriver driver,String url) throws Exception
 	{
-		String temp=PropertyFileUtility.getValueInPropertyFile("url");
+		String temp=PropertyFileUtility.getValueInPropertyFile(url);
 		driver.get(temp);
 		driver.manage().window().maximize();	
 	}
