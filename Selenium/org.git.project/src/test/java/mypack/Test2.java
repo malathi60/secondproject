@@ -12,10 +12,10 @@ public class Test2 {
 
 	public static void main(String[] args) 
 	{
-			WebDriverManager.operadriver().setup();
-			//ChromeOptions co=new ChromeOptions();
-			//co.addArguments("--headless");               //browser is not visible but requried operations are performed
-			OperaDriver driver=new OperaDriver();
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions co=new ChromeOptions();
+			co.addArguments("--headless");               //browser is not visible but requried operations are performed
+			ChromeDriver driver=new ChromeDriver();
 			driver.get("https://www.google.com");
 		System.out.println(driver.getCurrentUrl());
 		
