@@ -34,6 +34,7 @@ public class ShadowDomElem
 				+ "shadowRoot.querySelector('cr-action-menu>button.dropdown-item.clear-all+button'))");
 		openfolder.click();
 		Thread.sleep(5000);
+		System.out.println("shadow-dom elements succesfully operated");
 		driver.quit();
 		}
 
