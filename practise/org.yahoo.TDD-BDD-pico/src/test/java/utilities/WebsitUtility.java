@@ -147,8 +147,8 @@ public class WebsitUtility
 	public ArrayList<String> switchTonewTab(RemoteWebDriver driver)
 	{
 		driver.switchTo().newWindow(WindowType.TAB);
-		Set<String> w=driver.getWindowHandles();
-		ArrayList<String> wh=new ArrayList<String>(w);
+		Set<String> wn=driver.getWindowHandles();
+		ArrayList<String> wh=new ArrayList<String>(wn);
 		return(wh);
 	}
 	public void backToWindow(RemoteWebDriver driver,ArrayList<String> x)
