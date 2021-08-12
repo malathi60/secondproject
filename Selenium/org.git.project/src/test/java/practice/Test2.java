@@ -1,4 +1,4 @@
-package mypack;
+package practice;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

@@ -1,4 +1,4 @@
-package mypack;
+package practice;
 
 public class Test3 {
 
