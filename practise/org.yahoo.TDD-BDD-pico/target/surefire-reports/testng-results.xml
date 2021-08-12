@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="130721" started-at="2021-08-04T12:53:57 IST" finished-at="2021-08-04T12:56:08 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.Runner1smoketest@43bd930a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="130721" started-at="2021-08-04T12:53:57 IST" finished-at="2021-08-04T12:56:08 IST">
+      <class name="tests.Runner1smoketest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.Runner1smoketest@43bd930a]" name="setUpClass" is-config="true" duration-ms="4132" started-at="2021-08-04T12:53:57 IST" finished-at="2021-08-04T12:54:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.Runner1smoketest@43bd930a]" name="runScenario" duration-ms="34848" started-at="2021-08-04T12:54:02 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-04T12:54:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate yahoo home page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Yahoo Login]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.Runner1smoketest@43bd930a]" name="runScenario" duration-ms="84037" started-at="2021-08-04T12:54:36 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-04T12:56:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate login details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Yahoo Login]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at gluecode.StepDefs1.validate_outcome_related_to_password_criteria_as(StepDefs1.java:189)
+at ✽.validate outcome related to password criteria as "valid"(file:///E:/selenium-self-practice/org.yahoo.TDD-BDD-pico/src/test/resources/features/f1.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.Runner1smoketest@43bd930a]" name="runScenario" duration-ms="2942" started-at="2021-08-04T12:56:01 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-04T12:56:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate yahoo compose mail"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[validate compose]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: Unrecognised option moz:debuggerAddress
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-61MM6P5', ip: '192.168.29.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: Unrecognised option moz:debuggerAddress
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-61MM6P5', ip: '192.168.29.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:251)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:205)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:193)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:171)
+at utilities.WebsitUtility.OpenBrowser(WebsitUtility.java:54)
+at gluecode.StepDefs1.launch_site_using_browser(StepDefs1.java:49)
+at ✽.Launch site using "firefox" browser(file:///E:/selenium-self-practice/org.yahoo.TDD-BDD-pico/src/test/resources/features/f4exceldata.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.Runner1smoketest@43bd930a]" name="tearDownClass" is-config="true" duration-ms="4637" started-at="2021-08-04T12:56:03 IST" finished-at="2021-08-04T12:56:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.Runner1smoketest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+# Created at 2021-07-24T22:03:50.613
+Boot Manifest-JAR contains absolute paths in classpath 'E:\selenium-self-practice\org.yahoo.TDD-BDD-pico\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

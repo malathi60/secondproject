@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="121.999">
+<testcase classname="Yahoo Login" name="Validate yahoo home page title" time="33.088">
+<system-out><![CDATA[Given Launch site using "chrome" browser....................................passed
+And Lunch site..............................................................passed
+When title of the  Page is "Yahoo"..........................................passed
+Then close yahoo site.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Yahoo Login" name="validate login details" time="84.016">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given Launch site using "chrome" browser....................................passed
+And Lunch site..............................................................passed
+When enter userid as "msdet21"..............................................passed
+And click userid next button................................................passed
+And validate outcome related to userid criteria as "valid"..................passed
+And enter password  "Learn@123".............................................passed
+And click pwd next button...................................................passed
+And validate outcome related to password criteria as "valid"................failed
+Then quite site.............................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at gluecode.StepDefs1.validate_outcome_related_to_password_criteria_as(StepDefs1.java:189)
+	at ✽.validate outcome related to password criteria as "valid"(file:///E:/selenium-self-practice/org.yahoo.TDD-BDD-pico/src/test/resources/features/f1.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="validate compose" name="validate yahoo compose mail" time="2.925">
+<failure message="Could not start a new session. Response code 400. Message: Unrecognised option moz:debuggerAddress&#10;Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'&#10;System info: host: 'DESKTOP-61MM6P5', ip: '192.168.29.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given Launch site using "firefox" browser...................................failed
+And Lunch site..............................................................skipped
+When enter userid as "msdet21"..............................................skipped
+And click userid next button................................................skipped
+And enter password  "Learn@123".............................................skipped
+And click pwd next button...................................................skipped
+Then validate login page....................................................skipped
+Then compose a mail by taking data from EXcel file using "src\\test\\resources\\testdatafiles\\composemailto.xlsx".skipped
+Then logout mail............................................................skipped
+And quite site..............................................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: Unrecognised option moz:debuggerAddress
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-61MM6P5', ip: '192.168.29.61', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:251)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:205)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:171)
+	at utilities.WebsitUtility.OpenBrowser(WebsitUtility.java:54)
+	at gluecode.StepDefs1.launch_site_using_browser(StepDefs1.java:49)
+	at ✽.Launch site using "firefox" browser(file:///E:/selenium-self-practice/org.yahoo.TDD-BDD-pico/src/test/resources/features/f4exceldata.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
