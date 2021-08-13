@@ -31,6 +31,9 @@ public class SigninPage
 	@FindBy(how=How.XPATH,using="//p[contains(text(),'Sorry, ')]")
 	private WebElement blankuiderr;
 	
+	@FindBy(how=How.XPATH,using="//div[@class='recaptcha-checkbox-border']/parent::span")
+	private WebElement captcha;
+	
 	//constructor method
 	public SigninPage(RemoteWebDriver driver,FluentWait<RemoteWebDriver> wait)
 	{
@@ -51,6 +54,20 @@ public class SigninPage
 	public void clickNext()
 	{
 		wait.until(ExpectedConditions.visibilityOf(next)).click();
+	}
+	public void clickcaptchaIfExist() throws Exception
+	{
+		try {
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("recaptcha-iframe"));
+		driver.switchTo().frame(0);
+		wait.until(ExpectedConditions.visibilityOf(captcha)).click();
+		Thread.sleep(20000);
+		}
+		catch(Exception ex)
+		{
+			System.out.println("no such capatch,continue furture code");
+		}
+		
 	}
 	public boolean isBlankInvaliduiderr()
 	{
