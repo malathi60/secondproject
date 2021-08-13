@@ -15,6 +15,7 @@ public class Sample
 		 FluentWait<RemoteWebDriver> wait=null;
 		HomePage hp=new HomePage(driver,wait);
 		hp.uidFill("id");
+		System.out.println("id entered");
 	}
 		
 
