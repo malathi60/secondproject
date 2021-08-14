@@ -24,6 +24,7 @@ public class SVGElements {
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver=new ChromeDriver();
 		Scanner sc=new Scanner(System.in);
+		System.out.println("enter item name");
 		String items=sc.nextLine();
 		driver.get("https://emicalculator.net/");
 		FluentWait<ChromeDriver> wait=new FluentWait<ChromeDriver>(driver);
